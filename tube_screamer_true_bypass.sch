@@ -13,4 +13,150 @@ Comment2 "janne.oksanen@gmail.com"
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Connector:Barrel_Jack_Switch J?
+U 1 1 60436095
+P 1900 4050
+F 0 "J?" H 1671 4000 50  0000 R CNN
+F 1 "9V DC IN  +(O-" H 1671 4091 50  0000 R CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1950 4010 50  0001 C CNN
+F 3 "~" H 1950 4010 50  0001 C CNN
+	1    1900 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 6043663B
+P 2650 4350
+F 0 "D8" V 2450 4200 50  0000 L CNN
+F 1 "1N4003" H 2550 4250 50  0000 L CNN
+F 2 "" H 2650 4350 50  0001 C CNN
+F 3 "~" H 2650 4350 50  0001 C CNN
+	1    2650 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 6043740B
+P 3000 4350
+F 0 "C17" H 3050 4550 50  0000 L CNN
+F 1 "100µF/10V" V 2850 4050 50  0000 L CNN
+F 2 "" H 3038 4200 50  0001 C CNN
+F 3 "~" H 3000 4350 50  0001 C CNN
+	1    3000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 60437BED
+P 3900 4550
+F 0 "C16" H 4015 4596 50  0000 L CNN
+F 1 "47µF/10V" H 3950 4400 50  0000 L CNN
+F 2 "" H 3938 4400 50  0001 C CNN
+F 3 "~" H 3900 4550 50  0001 C CNN
+	1    3900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 60438DAA
+P 3500 4150
+F 0 "R33" H 3570 4196 50  0000 L CNN
+F 1 "10k" V 3500 4100 50  0000 L CNN
+F 2 "" V 3430 4150 50  0001 C CNN
+F 3 "~" H 3500 4150 50  0001 C CNN
+	1    3500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 60439BEA
+P 3500 4550
+F 0 "R32" H 3570 4596 50  0000 L CNN
+F 1 "10k" H 3570 4505 50  0000 L CNN
+F 2 "" V 3430 4550 50  0001 C CNN
+F 3 "~" H 3500 4550 50  0001 C CNN
+	1    3500 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3950 2400 3950
+Wire Wire Line
+	3500 3950 3500 4000
+Wire Wire Line
+	3500 4300 3500 4350
+Wire Wire Line
+	2250 4700 2250 4150
+Wire Wire Line
+	2250 4150 2200 4150
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 6043B18E
+P 2900 4700
+F 0 "#PWR?" H 2900 4500 50  0001 C CNN
+F 1 "GNDPWR" H 2904 4546 50  0000 C CNN
+F 2 "" H 2900 4650 50  0001 C CNN
+F 3 "" H 2900 4650 50  0001 C CNN
+	1    2900 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 4700
+Wire Wire Line
+	2900 4700 2650 4700
+$Comp
+L power:+9V #PWR?
+U 1 1 6043BB33
+P 2400 3950
+F 0 "#PWR?" H 2400 3800 50  0001 C CNN
+F 1 "+9V" H 2415 4123 50  0000 C CNN
+F 2 "" H 2400 3950 50  0001 C CNN
+F 3 "" H 2400 3950 50  0001 C CNN
+	1    2400 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3950 2650 4200
+Connection ~ 2650 3950
+Wire Wire Line
+	2650 4500 2650 4700
+Connection ~ 2650 4700
+Wire Wire Line
+	2650 4700 2250 4700
+Wire Wire Line
+	3000 4200 3000 3950
+Connection ~ 3000 3950
+Wire Wire Line
+	3000 3950 3500 3950
+Wire Wire Line
+	3000 4500 3000 4700
+Connection ~ 3000 4700
+Wire Wire Line
+	3000 4700 2900 4700
+Connection ~ 2400 3950
+Wire Wire Line
+	2400 3950 2650 3950
+Wire Wire Line
+	2650 3950 3000 3950
+Wire Wire Line
+	3500 3950 4000 3950
+Connection ~ 3500 3950
+Wire Wire Line
+	3500 4350 3900 4350
+Wire Wire Line
+	3900 4350 3900 4400
+Connection ~ 3500 4350
+Wire Wire Line
+	3500 4350 3500 4400
+Wire Wire Line
+	3900 4350 4000 4350
+Connection ~ 3900 4350
+Text Label 4000 3950 0    50   ~ 0
+9V
+Text Label 4000 4350 0    50   ~ 0
+4.5V
+Wire Wire Line
+	3000 4700 3500 4700
+Connection ~ 3500 4700
+Wire Wire Line
+	3500 4700 3900 4700
 $EndSCHEMATC
