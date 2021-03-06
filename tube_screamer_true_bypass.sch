@@ -29,7 +29,7 @@ L Device:D D8
 U 1 1 6043663B
 P 1850 3800
 F 0 "D8" V 1650 3650 50  0000 L CNN
-F 1 "1N4003" H 1750 3700 50  0000 L CNN
+F 1 "1N4001" H 1750 3700 50  0000 L CNN
 F 2 "" H 1850 3800 50  0001 C CNN
 F 3 "~" H 1850 3800 50  0001 C CNN
 	1    1850 3800
@@ -322,4 +322,181 @@ Wire Wire Line
 	2650 2150 2650 2200
 Wire Wire Line
 	3250 2150 3350 2150
+$Comp
+L Amplifier_Operational:TL082 U1
+U 1 1 60453B6D
+P 4150 2050
+F 0 "U1" H 4100 1800 50  0000 C CNN
+F 1 "TL082" H 4300 1900 50  0000 C CNN
+F 2 "" H 4150 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4150 2050 50  0001 C CNN
+	1    4150 2050
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL082 U1
+U 2 1 60455AF6
+P 5800 2200
+F 0 "U1" H 5800 1833 50  0000 C CNN
+F 1 "TL082" H 5800 1924 50  0000 C CNN
+F 2 "" H 5800 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5800 2200 50  0001 C CNN
+	2    5800 2200
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL082 U1
+U 3 1 60457E89
+P 4050 3150
+F 0 "U1" H 4008 3196 50  0000 L CNN
+F 1 "TL082" H 4008 3105 50  0000 L CNN
+F 2 "" H 4050 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4050 3150 50  0001 C CNN
+	3    4050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60462066
+P 3550 1500
+F 0 "C3" V 3400 1450 50  0000 C CNN
+F 1 "0.047µF" V 3700 1450 50  0000 C CNN
+F 2 "" H 3588 1350 50  0001 C CNN
+F 3 "~" H 3550 1500 50  0001 C CNN
+	1    3550 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 604638B6
+P 4100 1550
+F 0 "C4" V 4050 1450 50  0000 C CNN
+F 1 "51pF" V 4150 1700 50  0000 C CNN
+F 2 "" H 4138 1400 50  0001 C CNN
+F 3 "~" H 4100 1550 50  0001 C CNN
+	1    4100 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60463DDF
+P 3200 1500
+F 0 "R4" V 3100 1500 50  0000 C CNN
+F 1 "4.7k" V 3200 1500 50  0000 C CNN
+F 2 "" V 3130 1500 50  0001 C CNN
+F 3 "~" H 3200 1500 50  0001 C CNN
+	1    3200 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60464A16
+P 3900 800
+F 0 "R6" V 3693 800 50  0000 C CNN
+F 1 "51k" V 3784 800 50  0000 C CNN
+F 2 "" V 3830 800 50  0001 C CNN
+F 3 "~" H 3900 800 50  0001 C CNN
+	1    3900 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 6046519D
+P 4100 1050
+F 0 "D2" H 4000 1100 50  0000 C CNN
+F 1 "1N4148" H 4300 1000 50  0000 C CNN
+F 2 "" H 4100 1050 50  0001 C CNN
+F 3 "~" H 4100 1050 50  0001 C CNN
+	1    4100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 60465D12
+P 4100 1250
+F 0 "D1" H 4200 1200 50  0000 C CNN
+F 1 "1N4148" H 3900 1300 50  0000 C CNN
+F 2 "" H 4100 1250 50  0001 C CNN
+F 3 "~" H 4100 1250 50  0001 C CNN
+	1    4100 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L freetronics_schematic:POT VR1
+U 1 1 6046655F
+P 4500 800
+F 0 "VR1" H 4500 585 50  0000 C CNN
+F 1 "500k Log" H 4500 676 50  0000 C CNN
+F 2 "" H 4500 800 60  0000 C CNN
+F 3 "" H 4500 800 60  0000 C CNN
+	1    4500 800 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 2150 3850 2150
+Wire Wire Line
+	4450 2050 4500 2050
+Wire Wire Line
+	4500 2050 4500 1550
+Wire Wire Line
+	3750 800  3700 800 
+Wire Wire Line
+	3700 800  3700 1050
+Wire Wire Line
+	3700 1500 3700 1550
+Wire Wire Line
+	3700 1950 3850 1950
+Connection ~ 3700 1500
+Wire Wire Line
+	4050 800  4250 800 
+Wire Wire Line
+	4250 1050 4500 1050
+Connection ~ 4500 1050
+Wire Wire Line
+	4500 1050 4500 950 
+Wire Wire Line
+	3950 1050 3700 1050
+Connection ~ 3700 1050
+Wire Wire Line
+	3700 1050 3700 1250
+Wire Wire Line
+	3700 1250 3950 1250
+Connection ~ 3700 1250
+Wire Wire Line
+	3700 1250 3700 1500
+Wire Wire Line
+	4250 1250 4500 1250
+Connection ~ 4500 1250
+Wire Wire Line
+	4500 1250 4500 1050
+Wire Wire Line
+	4250 1550 4500 1550
+Connection ~ 4500 1550
+Wire Wire Line
+	4500 1550 4500 1250
+Wire Wire Line
+	3950 1550 3700 1550
+Connection ~ 3700 1550
+Wire Wire Line
+	3700 1550 3700 1950
+Wire Wire Line
+	3400 1500 3350 1500
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 60472A92
+P 3000 1550
+F 0 "#PWR?" H 3000 1350 50  0001 C CNN
+F 1 "GNDPWR" H 3004 1396 50  0000 C CNN
+F 2 "" H 3000 1500 50  0001 C CNN
+F 3 "" H 3000 1500 50  0001 C CNN
+	1    3000 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1550 3000 1500
+Wire Wire Line
+	3000 1500 3050 1500
+NoConn ~ 4750 800 
+Text Notes 4650 1000 0    50   ~ 0
+Distortion
 $EndSCHEMATC
